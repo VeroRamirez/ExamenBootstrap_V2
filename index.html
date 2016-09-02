@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tienda</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">	
+	</head>
+	<body>
+		<header >
+			<div class="container-fluid">
+				<!--Parte Menu-->	
+				<div class="row">
+					<div class="col-xs-12">
+						<nav class="navbar navbar-default">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">
+									<h6 class="inline">Default Welcome msg!</h6>
+								</a>
+							</div>
+							<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+								<ul class="nav navbar-nav">
+									<!--Combo lenguaje-->
+							        <li class="dropdown">
+							        	<a class="dropdown-toggle" data-toggle="dropdown" href="#seccion1">
+							        		<img src="assets/images/flag1.png" alt="Ingles"> Language <span class="caret"></span>
+							        	</a>
+						        		<ul class="dropdown-menu">
+						        			<li>
+						        				<a href="#"><img src="assets/images/flag1.png" alt="English">English</a>
+						        			</li>
+						        			<li>
+						        				<a href="#"><img src="assets/images/flag2.png" alt="French">French</a>
+						        			</li>
+						        		</ul>
+							        </li>
+							        <!--Combo Divisa-->
+							        <li class="dropdown">
+							        	<a href="#seccion2" class="dropdown-toggle" data-toggle="dropdown">
+								        	<span class="glyphicon glyphicon-usd"></span>
+								        	Currency<span class="caret"></span>
+							        	</a>
+							        	<ul class="dropdown-menu">
+							        		<li>
+							        			<a href="#"><span class="glyphicon glyphicon-usd"></span>Dollar</a>
+							        		</li>
+							        		<li>
+							        			<a href="#"><span class="glyphicon glyphicon-euro"></span>Euro</a>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!--Combo Cuenta-->
+							        <li class="dropdown">
+							        	<a href="#seccion3" class="dropdown-toggle" data-toggle="dropdown">
+								        	<span class="glyphicon glyphicon-user"></span>
+								        	My account<span class="caret"></span>
+							        	</a>
+							        	<ul class="dropdown-menu">
+							        		<li>
+							        			<span class="glyphicon glyphicon-pencil"></span>Log in
+							        		</li>
+							        		<li>
+							        			<span class="glyphicon glyphicon-lock"></span>Log out
+							        		</li>
+							        	</ul>
+							        </li>
+							    </ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<!--Informacion principal-->
+				<div class="row">
+					<!--Horario-->
+					<div class="col-xs-4 text-center">
+						<span class="glyphicon glyphicon-time"></span>
+						<p class="inline txt-20">OPENING TIME</p>
+						<p class="txt-20">9:00 A.M - 10:00 P.M</p>
+					</div>
+					<!--Logo-->
+					<div class="col-xs-4 text-center">
+						<img src="assets/images/logo.png" alt="Accesorios" class="logo">
+					</div>
+					<!--Buscador-->
+					<div class="col-xs-4">
+						<form action="#">
+							<!--Coloca un icono dentro de la caja de texto-->
+							<div class="form-group has-feedback">
+							    <input type="text" class="form-control" placeholder="Search" />
+							    <i class="glyphicon glyphicon-search form-control-feedback"></i>
+							</div>
+						</form>
+					</div>
+				</div><hr>
+				<!--Submenu-->
+				<div class="row">
+					<div class="col-xs-8">
+						<ul class="nav nav-pills">
+						    <li class="active"><a data-toggle="pill" href="#home">HOME</a></li>
+						    <li><a data-toggle="pill" href="#menu2">CONTACT US</a></li>
+					  	</ul>
+					</div>
+					<div class="col-xs-4 dropdown">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="dropdown">
+							<span class="glyphicon glyphicon-shopping-cart"></span>
+							My Cart <br>2 item(s) $244.00
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<div class="row">
+									<div class="col-xs-6">
+										<img src="assets/images/c2.jpg" alt="bolsa" class="img-compra">
+									</div>
+									<div class="col-xs-6 pd-0">
+										<p class="txt-cart inline">Aliquam Consequat<br>1 x $500</p>
+										<a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row pd-top">
+									<div class="col-xs-6">
+										<img src="assets/images/b2.jpg" alt="bolsa" class="img-compra">
+									</div>
+									<div class="col-xs-6 pd-0">
+										<p class="txt-cart inline">Quisque In Arcuc<br>1 x $200</p>
+										<a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+									</div>
+								</div>
+							</li>	
+							<li>
+								<div class="row pd-price">
+									<div class="col-xs-6 txt-cart ">
+										<p>Subtotal</p>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="txt-cart inline txt-pink">$700</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row pd-price">
+									<div class="col-xs-6 txt-cart">
+										<p>Eco Tax(-2.00)</p>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="txt-cart inline txt-pink">$7.00</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row pd-price">
+									<div class="col-xs-6 txt-cart">
+										<p>VAT (20%)</p>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="txt-cart inline txt-pink">$40.00</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+														
+					</div>
+				</div>
+				<!--Slides-->
+				<div>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
+						<!-- Imagenes para el slide -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="assets/images/slider1.jpg" alt="equipo1">
+								<!--Texto en slide-->
+								<div class="carousel-caption">
+							      	<h2 class="borde">AUTUM / WINTER LOOKBOOK</h2>
+							      	<h3>- 2016 COLLECTION -</h3>
+							     </div>
+							</div>
+							<div class="item">
+								<img src="assets/images/slider2.jpg" alt="equipo2">
+								<!--Texto en slide-->
+								<div class="carousel-caption">
+							      	<h2 class="borde">AUTUM / WINTER LOOKBOOK</h2>
+							      	<h3>- 2016 COLLECTION -</h3>
+							     </div>
+							</div>
+						</div>
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header >
+		<div class="container-fluid">
+			<section>
+				<div class="row pd-top-2 text-center ">
+					<div class="col-xs-5">
+						<img src="assets/images/banner1.jpg" alt="accesorios">
+					</div>
+					<div class="col-xs-7">
+						<img src="assets/images/banner2.jpg" alt="accesorios">
+					</div>
+				</div>
+				<!--Primera Paginacion-->
+				<div class="row">
+					<div class="col-md-4 pd-half visible-md visible-lg">
+						<hr><hr>
+					</div>
+					<div class="col-md-4  text-center">
+						<ul class="pagination">
+							<li><a href="#"><span class="glyphicon glyphicon-menu-left"></span></a></li>
+							<li><a href="#">LATEST</a></li>
+							<li><a href="#">BESTSELLER</a></li>
+							<li><a href="#">SALE</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-menu-right"></span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 pd-half visible-md visible-lg">
+						<hr><hr>
+					</div>
+				</div>
+				<!--Primer catalogo-->
+				<div class="row text-center">
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/a1.jpg" alt="guantes">
+							<h4>Deliver Wide</h4>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<p class="pink">$218.00</p>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/b1.jpg" alt="gorra">
+							<h4>Deliver Wide</h4>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span><br>
+							<p class="tachar inline">$242.00</p>
+							<p class="pink inline text">$218.00</p>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/c1.jpg" alt="bolsa">
+							<h4>Deliver Wide</h4>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span><br>
+							<p class="tachar inline">$242.00</p>
+							<p class="pink inline text">$218.00</p>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/d1.jpg" alt="bolsa">
+							<h4>Deliver Wide</h4>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span><br>
+							<p class="tachar inline">$242.00</p>
+							<p class="pink inline text">$218.00</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Clientes marcas-->
+			<section>
+				<div class="row fondo text-center">
+					<div class="col-xs-6 col-sm-2">
+						<img src="assets/images/client1.jpg" alt="marca1">
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<img src="assets/images/client2.jpg" alt="marca2">
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<img src="assets/images/client3.jpg" alt="marca3">
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<img src="assets/images/client4.jpg" alt="marca4">
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<img src="assets/images/client5.jpg" alt="marca5">
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<img src="assets/images/client6.jpg" alt="marca6">
+					</div>
+				</div>
+			</section>
+			<section>
+				<!--Segundo paginador-->
+				<div class="row">
+					<div class="col-md-4 pd-half visible-md visible-lg">
+						<hr><hr>
+					</div>
+					<div class="col-md-4  text-center">
+						<ul class="pagination">
+							<li><a href="#"><span class="glyphicon glyphicon-menu-left"></span></a></li>
+							<li><a href="#">CLOTHING</a></li>
+							<li><a href="#">EQUIPMENT</a></li>
+							<li><a href="#">JEWLLERY</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-menu-right"></span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 pd-half visible-md visible-lg">
+						<hr><hr>
+					</div>
+				</div>
+				<!--Segundo Catálogo-->
+				<div class="row">
+					<!--Articulo y Descropcion-->
+					<div class="col-sm-2 col-xs-6">
+						<div class="thumbnail">
+							<img src="assets/images/a2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<h4>Deliver Wide</h4>
+						<p class="tachar inline">$242.00</p>
+						<p class="pink inline text">$218.00</p>
+						<p>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</p>
+						<button class="btn btn-default">
+							<span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
+						</button>
+					</div>
+					<!--Salto y tamaño de renglon para xs-->
+					<div class="clearfix visible-xs-block"></div>
+					<!--Articulo y Descropcion-->
+					<div class="col-sm-2 col-xs-6">
+						<div class="thumbnail">
+							<img src="assets/images/d2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<h4>Deliver Wide</h4>
+						<p class="pink inline text">$218.00</p>
+						<p>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</p>
+						<button class="btn btn-default">
+							<span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
+						</button>
+					</div>
+					<!--Salto y tamaño de renglon para xs-->
+					<div class="clearfix visible-xs-block"></div>
+					<!--Articulo y Descropcion-->
+					<div class="col-sm-2 col-xs-6">
+						<div class="thumbnail">
+							<img src="assets/images/g2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<h4>Deliver Wide</h4>
+						<p class="pink inline text">$218.00</p>
+						<p>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</p>
+						<button class="btn btn-default">
+							<span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
+						</button>
+					</div>
+				</div>
+				<!--Continua catalogo-->
+				<div class="row">
+					<!--Articulo y Descropcion-->
+					<div class="col-sm-2 col-xs-6">
+						<div class="thumbnail">
+							<img src="assets/images/c2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<h4>Deliver Wide</h4>
+						<p class="pink inline text">$218.00</p>
+						<p>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</p>
+						<button class="btn btn-default">
+							<span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
+						</button>
+					</div>
+					<!--Salto y tamaño de renglon para xs-->
+					<div class="clearfix visible-xs-block"></div>
+					<!--Articulo y Descropcion-->
+					<div class="col-sm-2 col-xs-6">
+						<div class="thumbnail">
+							<img src="assets/images/c2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<h4>Deliver Wide</h4>
+						<p class="tachar inline">$242.00</p>
+						<p class="pink inline text">$218.00</p>
+						<p>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</p>
+						<button class="btn btn-default">
+							<span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
+						</button>
+					</div>
+					<!--Salto y tamaño de renglon para xs-->
+					<div class="clearfix visible-xs-block"></div>
+					<!--Articulo y Descropcion-->
+					<div class="col-sm-2 col-xs-6">
+						<div class="thumbnail">
+							<img src="assets/images/e2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<h4>Deliver Wide</h4>
+						<p class="pink inline text">$218.00</p>
+						<p>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</p>
+						<button class="btn btn-default">
+							<span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
+						</button>
+					</div>
+				</div>
+			</section>
+			<!--BLOG-->
+			<section>
+				<!--Tercer paginador-->
+				<div class="row">
+					<div class="col-md-4 pd-half visible-md visible-lg">
+						<hr><hr>
+					</div>
+					<div class="col-md-4  text-center">
+						<ul class="pagination">
+							<li><a href="#"><span class="glyphicon glyphicon-menu-left"></span></a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-menu-right"></span></a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 pd-half visible-md visible-lg">
+						<hr><hr>
+					</div>
+				</div>
+				<!--Posts del blog-->
+				<div class="row text-center">
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/blog2.jpg" alt="">
+							<div class="text-justify">
+								<h4>THE SAMPLE HEADING TITLE</h4>
+								<p class="fecha">27/11/2015</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque rem tenetur a nulla repellat dolor cum quam officiis...</p>
+								<a href="#">Read more...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/blog1.jpg" alt="">
+							<div class="text-justify">
+								<h4>THE SAMPLE HEADING TITLE</h4>
+								<p class="fecha">27/11/2015</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque rem tenetur a nulla repellat dolor cum quam officiis...</p>
+								<a href="#">Read more...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/blog2.jpg" alt="">
+							<div class="text-justify">
+								<h4>THE SAMPLE HEADING TITLE</h4>
+								<p class="fecha">27/11/2015</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque rem tenetur a nulla repellat dolor cum quam officiis...</p>
+								<a href="#">Read more...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="thumbnail">
+							<img src="assets/images/blog3.jpg" alt="">
+							<div class="text-justify">
+								<h4>THE SAMPLE HEADING TITLE</h4>
+								<p class="fecha">27/11/2015</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque rem tenetur a nulla repellat dolor cum quam officiis...</p>
+								<a href="#">Read more...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Informacion compra-->
+			<section>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<div class="row">
+								<div class="col-xs-3 borde-right text-center">
+									<span class="glyphicon glyphicon-earphone"></span>
+								</div>
+								<div class="col-xs-9">
+									<h4>ORDER ONLINE NOW </h4>
+									<p>Call Us:(0454) 785 412</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<div class="row">
+								<div class="col-xs-3 borde-right text-center">
+									<span class="glyphicon glyphicon-plane"></span>
+								</div>
+								<div class="col-xs-9">
+									<h4>FREE WORLDWIDE SHIPPING </h4>
+									<p>On order over $100</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="thumbnail">
+							<div class="row">
+								<div class="col-xs-3 borde-right text-center">
+									<span class="glyphicon glyphicon-usd ico-tam"></span>
+								</div>
+								<div class="col-xs-9">
+									<h4>30 DAYS MONEY BACK 100% </h4>
+									<p>Satisfaction guarantee</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="row foot-back1">
+					<div class="col-sm-3">
+						<h4>ACCESORIES</h4>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque harum quasi nostrum voluptate ipsa recusandae esse, natus, accusantium hic soluta consequuntur unde excepturi sed, culpa aspernatur, rerum. Cum, nam, iusto.
+						</p>
+						<span class="glyphicon glyphicon-facebook"></span>
+					</div>
+					<div class="col-sm-2">
+						<h4>MY ACCOUNT</h4>
+						<ul>
+							<li>My Account</li>
+							<li>Order History</li>
+							<li>Wish List</li>
+							<li>Newsletter</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h4>INFORMATION</h4>
+						<ul>
+							<li>About Us</li>
+							<li>Delivery Information</li>
+							<li>Privacy Policy</li>
+							<li>Term & Conditions</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h4>EXTRAS</h4>
+						<ul>
+							<li>Brands</li>
+							<li>Gitt Vouchers</li>
+							<li>Affiliates</li>
+							<li>Specials</li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<h4>EXTRAS</h4>
+						<ul></ul>8901 Marmora Road, Glasgow D0489 GR. New York
+					</div>
+				</div>
+				<div class="row foot-back2">
+					<div class="col-md-6">
+						Copyright @ 2015 <a href="#">BootExperts</a> All rights reserved.
+					</div>
+					<div class="col-md-6 text-right">
+						<img src="assets/images/payment.png" alt="tarjetas">
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+								
+			
+		
+	    <script src="assets/js/jquery-1.11.3.min.js"></script>
+	    <script src="assets/js/bootstrap.min.js"></script>
+	</body>
+</html><div>
+	
+</div>

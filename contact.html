@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tienda</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">	
+	</head>
+	<body>
+		<header >
+			<div class="container-fluid">
+				<!--Parte Menu-->	
+				<div class="row">
+					<div class="col-xs-12">
+						<nav class="navbar navbar-default">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">
+									<h6 class="inline">Default Welcome msg!</h6>
+								</a>
+							</div>
+							<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+								<ul class="nav navbar-nav">
+									<!--Combo lenguaje-->
+							        <li class="dropdown">
+							        	<a class="dropdown-toggle" data-toggle="dropdown" href="#seccion1">
+							        		<img src="assets/images/flag1.png" alt="Ingles"> Language <span class="caret"></span>
+							        	</a>
+						        		<ul class="dropdown-menu">
+						        			<li>
+						        				<a href="#"><img src="assets/images/flag1.png" alt="English">English</a>
+						        			</li>
+						        			<li>
+						        				<a href="#"><img src="assets/images/flag2.png" alt="French">French</a>
+						        			</li>
+						        		</ul>
+							        </li>
+							        <!--Combo Divisa-->
+							        <li class="dropdown">
+							        	<a href="#seccion2" class="dropdown-toggle" data-toggle="dropdown">
+								        	<span class="glyphicon glyphicon-usd"></span>
+								        	Currency<span class="caret"></span>
+							        	</a>
+							        	<ul class="dropdown-menu">
+							        		<li>
+							        			<a href="#"><span class="glyphicon glyphicon-usd"></span>Dollar</a>
+							        		</li>
+							        		<li>
+							        			<a href="#"><span class="glyphicon glyphicon-euro"></span>Euro</a>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!--Combo Cuenta-->
+							        <li class="dropdown">
+							        	<a href="#seccion3" class="dropdown-toggle" data-toggle="dropdown">
+								        	<span class="glyphicon glyphicon-user"></span>
+								        	My account<span class="caret"></span>
+							        	</a>
+							        	<ul class="dropdown-menu">
+							        		<li>
+							        			<span class="glyphicon glyphicon-pencil"></span>Log in
+							        		</li>
+							        		<li>
+							        			<span class="glyphicon glyphicon-lock"></span>Log out
+							        		</li>
+							        	</ul>
+							        </li>
+							    </ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<!--Informacion principal-->
+				<div class="row">
+					<!--Horario-->
+					<div class="col-xs-4 text-center">
+						<span class="glyphicon glyphicon-time"></span>
+						<p class="inline txt-20">OPENING TIME</p>
+						<p class="txt-20">9:00 A.M - 10:00 P.M</p>
+					</div>
+					<!--Logo-->
+					<div class="col-xs-4 text-center">
+						<img src="assets/images/logo.png" alt="Accesorios" class="logo">
+					</div>
+					<!--Buscador-->
+					<div class="col-xs-4">
+						<form action="#">
+							<!--Coloca un icono dentro de la caja de texto-->
+							<div class="form-group has-feedback">
+							    <input type="text" class="form-control" placeholder="Search" />
+							    <i class="glyphicon glyphicon-search form-control-feedback"></i>
+							</div>
+						</form>
+					</div>
+				</div><hr>
+				<!--Submenu-->
+				<div class="row">
+					<div class="col-xs-8">
+						<ul class="nav nav-pills">
+						    <li class="active"><a data-toggle="pill" href="#home">HOME</a></li>
+						    <li><a data-toggle="pill" href="#menu2">CONTACT US</a></li>
+					  	</ul>
+					</div>
+					<div class="col-xs-4 dropdown">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="dropdown">
+							<span class="glyphicon glyphicon-shopping-cart"></span>
+							My Cart <br>2 item(s) $244.00
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<div class="row">
+									<div class="col-xs-6">
+										<img src="assets/images/c2.jpg" alt="bolsa" class="img-compra">
+									</div>
+									<div class="col-xs-6 pd-0">
+										<p class="txt-cart inline">Aliquam Consequat<br>1 x $500</p>
+										<a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row pd-top">
+									<div class="col-xs-6">
+										<img src="assets/images/b2.jpg" alt="bolsa" class="img-compra">
+									</div>
+									<div class="col-xs-6 pd-0">
+										<p class="txt-cart inline">Quisque In Arcuc<br>1 x $200</p>
+										<a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+									</div>
+								</div>
+							</li>	
+							<li>
+								<div class="row pd-price">
+									<div class="col-xs-6 txt-cart ">
+										<p>Subtotal</p>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="txt-cart inline txt-pink">$700</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row pd-price">
+									<div class="col-xs-6 txt-cart">
+										<p>Eco Tax(-2.00)</p>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="txt-cart inline txt-pink">$7.00</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row pd-price">
+									<div class="col-xs-6 txt-cart">
+										<p>VAT (20%)</p>
+									</div>
+									<div class="col-xs-6 text-right">
+										<p class="txt-cart inline txt-pink">$40.00</p>
+									</div>
+								</div>
+							</li>
+						</ul>					
+					</div>
+				</div>
+				<!--Imagen contacto-->
+				<div class="row back-contact">
+					<div class="col-xs-6">
+						<div class="jumbotron">
+							<h2>CONTACT US</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header >
+		<div class="container-fluid">
+			<section>
+				<div class="row">
+					<div class="col-xs-6">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5003373870136!2d-99.192379185572!3d19.30408334978086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffd887c3fdbd%3A0x933466a98a3bf1e4!2sPerisur!5e0!3m2!1ses-419!2smx!4v1472942355111" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="col-xs-6">
+						<form action="#" class="form-inline">
+							<div class="form-group">
+								<input type="text" class="form-control col-xs-6">
+								<input type="text" class="form-control col-xs-6">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="row foot-back1">
+					<div class="col-sm-3">
+						<h4>ACCESORIES</h4>
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque harum quasi nostrum voluptate ipsa recusandae esse, natus, accusantium hic soluta consequuntur unde excepturi sed, culpa aspernatur, rerum. Cum, nam, iusto.
+						</p>
+						<span class="glyphicon glyphicon-facebook"></span>
+					</div>
+					<div class="col-sm-2">
+						<h4>MY ACCOUNT</h4>
+						<ul>
+							<li>My Account</li>
+							<li>Order History</li>
+							<li>Wish List</li>
+							<li>Newsletter</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h4>INFORMATION</h4>
+						<ul>
+							<li>About Us</li>
+							<li>Delivery Information</li>
+							<li>Privacy Policy</li>
+							<li>Term & Conditions</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h4>EXTRAS</h4>
+						<ul>
+							<li>Brands</li>
+							<li>Gitt Vouchers</li>
+							<li>Affiliates</li>
+							<li>Specials</li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<h4>EXTRAS</h4>
+						<ul></ul>8901 Marmora Road, Glasgow D0489 GR. New York
+					</div>
+				</div>
+				<div class="row foot-back2">
+					<div class="col-md-6">
+						Copyright @ 2015 <a href="#">BootExperts</a> All rights reserved.
+					</div>
+					<div class="col-md-6 text-right">
+						<img src="assets/images/payment.png" alt="tarjetas">
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+								
+			
+		
+	    <script src="assets/js/jquery-1.11.3.min.js"></script>
+	    <script src="assets/js/bootstrap.min.js"></script>
+	</body>
+</html><div>
+	
+</div>
